@@ -38,3 +38,21 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+.hollow {
+    font-size: 70px;
+    color: #31E300;
+    text-shadow: 0px 0px 5px #FFF, 0px 0px 10px #FFF, 0px 0px 15px #FFF, 0px 0px 20px #31E300, 0px 0px 30px #31E300, 0px 0px 40px #31E300, 0px 0px 50px #31E300, 0px 0px 75px #31E300;
+}
+
+.relief-down {
+    font-size: 70px;
+    color: rgba(245, 159, 26, 0.8);
+    text-shadow: 1px 4px 6px #FFF, 0px 0px 0px #000, 1px 4px 6px #FFF;
+}
+
+.relief-up {
+    font-size: 70px;
+    color: #2DAEBF;
+    text-shadow: 0px 1px 0px #0092B3, 0px 2px 0px #0087A6, 0px 3px 0px #008099, 0px 4px 0px #00758C, 0px 5px 0px #555, 0px 6px 0px #006A80, 0px 0px 0px #006073, 0px 8px 7px #056;
+}
