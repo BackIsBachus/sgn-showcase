@@ -121,8 +121,9 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these as default colors throughout
  $primary-color: #00BF54;
- $primary-color-dark: #007F38;
- $secondary-color: #CC8A14;
+ $primary-color-hover: #007F38;
+ $secondary-color: #E3AB0B;
+ $secondary-color-hover: #CC8A14; 
  $alert-color: #f04124;
  $success-color: #43AC6A;
  $warning-color: #f08a24;
@@ -720,13 +721,13 @@ $include-html-global-classes: $include-html-classes;
 // $icon-bar-font-color: $white;
 // $icon-bar-font-color-hover: $icon-bar-font-color;
 // $icon-bar-font-size: 1rem;
- $icon-bar-hover-color: $primary-color-dark;
+ $icon-bar-hover-color: $primary-color-hover;
 // $icon-bar-icon-color: $white;
 // $icon-bar-icon-color-hover: $icon-bar-icon-color;
 // $icon-bar-icon-size: 1.875rem;
 // $icon-bar-image-width: 1.875rem;
 // $icon-bar-image-height: 1.875rem;
-// $icon-bar-active-color: $primary-color;
+ $icon-bar-active-color: $primary-color-hover;
 // $icon-bar-item-padding: 1.25rem;
 
 // We use this to set default opacity and cursor for disabled icons.
