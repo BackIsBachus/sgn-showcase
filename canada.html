@@ -1,0 +1,408 @@
+<head>
+	<!--
+              _,     _   _    ,_  
+           o888P     Y8o8Y     Y888o.
+         d88888      88888      88888b
+       ,8888888b_  _d88888b_  _d8888888,
+       888888888888888888888888888888888
+       888888888888888888888888888888888
+        Y8888P"Y888P"Y888P-Y888P"Y88888'
+         Y888   '8'   Y8P   '8'   888Y
+          '8o          V          o8'
+             `                   `
+	-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta charset="utf-8"> 
+
+    <meta name="description" content="">
+
+    <meta name="twitter:card" content="summary_large_image">	
+    <meta name="twitter:site" content="@CODE_Hackathon">
+    <meta name="twitter:title" content="Canadian Open Data Experience">
+    <meta name="twitter:description" content="The Canadian Open Data Experience (CODE) is an intense 48-hour coding sprint where innovators from coast to coast compete to build the best app utilizing federal government data from the Canadian Open Data Portal.">
+    <meta name="twitter:image:src" content="https://www.canadianopendataexperience.ca/inc/img/thumb.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="Canadian Open Data Experience">
+    <meta property="og:image" content="https://www.canadianopendataexperience.ca/inc/img/thumb.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="768">
+    <meta property="og:image:height" content="384">
+    <meta property="og:url" content="https://www.canadianopendataexperience.ca/">
+    <meta property="og:description" content="The Canadian Open Data Experience (CODE) is an intense 48-hour coding sprint where innovators from coast to coast compete to build the best app utilizing federal government data from the Canadian Open Data Portal.">	
+    <meta property="fb:app_id" content="863588270329359">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css" rel="stylesheet">	
+
+    <link rel="stylesheet" href="https://www.canadianopendataexperience.ca/inc/js/fancybox/source/jquery.fancybox.css?v=2.1.5">
+    <link rel="stylesheet" href="https://www.canadianopendataexperience.ca/inc/js/dropzone/css/dropzone.css">
+    <link rel="stylesheet" href="https://www.canadianopendataexperience.ca/inc/css/animate.min.css">
+    <link rel="stylesheet" href="https://www.canadianopendataexperience.ca/inc/css/foundation.min.css">
+    <link rel="stylesheet" href="https://www.canadianopendataexperience.ca/inc/css/code.css?v=1.1.7">
+
+    <link rel="shortcut icon" href="https://www.canadianopendataexperience.ca/inc/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://www.canadianopendataexperience.ca/inc/img/favicon.ico" type="image/x-icon">
+
+    <!--[if lt IE 9]>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+<script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+<script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+<![endif]-->
+
+    <!--[if lt IE 9]>
+<link rel="stylesheet" href="https://www.canadianopendataexperience.ca/inc/css/ie8.css">
+<![endif]-->
+
+    <title>Canadian Open Data Experience</title>	
+    <meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style><meta class="foundation-mq-topbar"><style type="text/css">.fancybox-margin{margin-right:12px;}</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+    .fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+    .fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+<body class="f-topbar-fixed">
+    <div class="off-canvas-wrap" data-offcanvas="">
+        <div class="inner-wrap">
+
+            <div id="scrolltop">
+                <i class="fa fa-chevron-up"></i>
+            </div>
+
+            <!-- nav for medium-down devices -->
+            <div class="small-header nav-container show-for-medium-down">
+                <nav class="tab-bar show-for-medium-down">
+                    <section class="left">
+                        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+                    </section>
+
+                    <section class="middle tab-bar-section">
+                        <h1 class="title"><a href="https://www.canadianopendataexperience.ca/"><img src="https://www.canadianopendataexperience.ca/inc/img/logo_en.png" alt="CODE" class="site-logo"></a></h1>
+                    </section>
+                </nav>
+            </div>
+
+
+            <!-- nav for larger devices -->
+            <div class="fixed contain-to-grid hide-for-medium-down nav-container">
+                <nav class="top-bar fixed hide-for-medium-down" data-topbar="" role="navigation">
+                    <ul class="title-area">
+                        <li class="name">
+                            <h1><a href="https://www.canadianopendataexperience.ca/"><img src="https://www.canadianopendataexperience.ca/inc/img/logo_en.png" alt="CODE" class="site-logo"></a></h1>
+                        </li>
+                    </ul>
+
+
+
+                    <section class="top-bar-section">
+                        <!-- Right Nav Section -->
+                        <ul class="right">
+                            <li class="divider"></li>
+                            <li><a href="https://www.canadianopendataexperience.ca/?lang=fr">Français</a></li>
+                            <li class="divider"></li>
+
+                            <li class="has-form"><a href="https://www.canadianopendataexperience.ca/login/" class="square-btn small square button">Login</a></li>						<li class="divider"></li>
+                        </ul>
+
+                        <!-- Left Nav Section -->
+                        <ul class="left">
+                            <li class="divider"></li>
+                            <li><a href="https://www.canadianopendataexperience.ca/news/">News</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://www.canadianopendataexperience.ca/sponsors/">Sponsors</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://www.canadianopendataexperience.ca/media-coverage/">Media Coverage</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://www.canadianopendataexperience.ca/faq/">FAQ</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://www.canadianopendataexperience.ca/competition/">Competition</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://www.canadianopendataexperience.ca/teams/">Teams</a></li>
+                            <li class="divider"></li>
+                        </ul>
+                    </section></nav>
+            </div>
+
+            <!-- for small devices -->
+            <aside class="left-off-canvas-menu">
+                <ul class="off-canvas-list">
+                    <li><label></label></li>
+                    <li><a href="https://www.canadianopendataexperience.ca/login/">Login</a></li>
+                    <li><a href="https://www.canadianopendataexperience.ca/news/">News</a></li>
+                    <li><a href="https://www.canadianopendataexperience.ca/sponsors/">Sponsors</a></li>
+                    <li><a href="https://www.canadianopendataexperience.ca/media-coverage/">Media Coverage</a></li>
+                    <li><a href="https://www.canadianopendataexperience.ca/faq/">FAQ</a></li>
+                    <li><a href="https://www.canadianopendataexperience.ca/competition/">Competition</a></li>		
+                    <li><a href="https://www.canadianopendataexperience.ca/teams/">Teams</a></li>	
+                    <li><label></label></li>	
+                    <li><a href="https://www.canadianopendataexperience.ca/media/">Media</a></li>
+                    <li><a href="https://www.canadianopendataexperience.ca/contact/">Contact Us</a></li>
+                    <li><a href="https://www.canadianopendataexperience.ca/privacy/">Privacy Policy</a></li>
+                    <li><a href="https://www.canadianopendataexperience.ca/terms/">Terms of Service</a></li>
+                    <li><a href="https://www.canadianopendataexperience.ca/?lang=fr">Français</a></li>
+                </ul>
+            </aside>
+
+            <section id="home-landing" class="home-section">
+                <div id="home-logo-section">
+                    <div class="row text-center">
+                        <img src="https://www.canadianopendataexperience.ca/inc/img/code_logo.png" id="home-code-logo" alt="CODE">
+                    </div>
+                    <div class="row text-center">
+                        <h1><span class="red">C</span>anadian <span class="red">O</span>pen <span class="red">D</span>ata <span class="red">E</span>xperience</h1>
+                        <h5 class="subheader">Largest hackathon in <span class="red">Canadian history</span></h5>
+                    </div>
+                    <br>
+                    <div class="row text-center">
+                        <a href="https://www.canadianopendataexperience.ca/top15/" class="button" id="register-btn">Top 15 Submissions</a>
+                    </div>
+                </div>
+                <div class="arrow animated bounce">
+                    <i class="fa fa-chevron-down fa-3x"></i>
+                </div>
+            </section>
+
+            <section id="home-tagline">
+                <div class="row">
+                    <div class="large-5 medium-5 columns banner-image small-text-center">
+                        <img src="https://www.canadianopendataexperience.ca/inc/img/home/home-about.png" alt="What is CODE?">
+                    </div>
+                    <div class="large-7 medium-7 columns banner-info">
+                        <h3>What is CODE?</h3>
+                        <p>The Canadian Open Data Experience (CODE) is an intense 48-hour coding sprint where innovators from coast to coast compete to build the best app utilizing federal government data from <a href="http://open.canada.ca">Canada's Open Government portal</a>.</p>
+                        <a href="https://www.canadianopendataexperience.ca/faq/" class="button">Learn More</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="home-steps">
+                <div class="row centered-text">
+                    <div class="large-12 columns">
+                        <h2>Accelerating Innovation and Hacktivating Open Data</h2>
+                        <h4 class="subheader">CODE is the first hackathon ever to be funded by the Government of Canada.</h4>
+                    </div>
+                </div>
+                <div class="row centered-text">
+                    <div class="medium-4 large-4 columns">
+                        <div class="small-only-text-center">
+                            <img src="https://www.canadianopendataexperience.ca/inc/img/home/home-register.png" alt="Register">
+                        </div>
+                        <h4>Register</h4>
+                        <p>Anyone can participate in CODE, regardless of digital prowess! Starting November 24th, 2014 you can create your participant profile and register your team or connect to join an existing team.</p>
+                    </div>
+                    <div class="medium-4 large-4 columns">
+                        <div class="small-only-text-center">
+                            <img src="https://www.canadianopendataexperience.ca/inc/img/home/home-connect.png" alt="Connect">
+                        </div>
+                        <h4>Connect</h4>
+                        <p>Don't have a team? Looking for additional team members to complement your skills? No problem! Once registered, our built-in matchmaking system will help you find the perfect team or teammates.</p>
+                    </div>
+                    <div class="medium-4 large-4 columns hide-for-small">
+                        <div class="small-only-text-center">
+                            <img src="https://www.canadianopendataexperience.ca/inc/img/home/home-discuss.png" alt="Discuss">
+                        </div>
+                        <h4>Discuss</h4>
+                        <p>Join the open data discussion and share your ideas! Click <a href="https://www.facebook.com/CanadianOpenDataExperience" target="_blank">here</a> to join our Facebook community and <a href="https://twitter.com/CODE_Hackathon" target="_blank">here</a> to follow us on Twitter.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row centered-text">
+                    <div class="medium-4 columns">
+                        <div class="small-only-text-center">
+                            <img src="https://www.canadianopendataexperience.ca/inc/img/home/home-compete_en.png" alt="Compete">
+                        </div>
+                        <h4>Compete</h4>
+                        <p>Starting with the announcement of the development themes at 6pm (EST) February 20th, 2015, you will have 48 hours to develop your submission using data from <a href="http://open.canada.ca" target="_blank">open.canada.ca</a>. Compete with teams from coast to coast to coast – online or from one of the CODE HUBs.
+
+                        </p>
+                    </div>
+                    <div class="medium-4 columns">
+                        <div class="small-only-text-center">
+                            <img src="https://www.canadianopendataexperience.ca/inc/img/home/home-win.png" alt="Win">
+                        </div>
+                        <h4>Win</h4>
+                        <p>The top 15 teams will be invited to present their applications to our judges at the CODE Pitch Day March 16th, 2015 in Toronto. The finalists will be announced and awarded their share of the $40,000 in cash prizes at the CODE Grand Finale in Toronto on March 26th, 2015. </p>
+                    </div>
+                    <div class="medium-4 columns end">
+                        <div class="small-only-text-center">
+                            <img src="https://www.canadianopendataexperience.ca/inc/img/home/home-succeed.png" alt="Succeed">
+                        </div>
+                        <h4>Succeed</h4>
+                        <p>We work hard to help you make the right connections and kickstart your open data career. Through CODE events you may come up with an idea for a brilliant app or even meet your future boss, investor, mentor, or co-founder. </p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="parallax-container">
+                <div class="content">
+                    <div class="row">
+                        <div id="home-quote" class="medium-10 medium-offset-1 columns text-center">
+                            "Data is Canada’s new natural resource. The sky's the limit in terms of what we can do with this material."<br>
+                            — The Honourable Minister Tony Clement, <br>
+                            President of the Treasury Board and CODE Facilitator			</div>
+                    </div>
+                </div>
+                <div class="parallax">
+                    <div style="top: -80%;"></div>
+                </div>
+            </div>
+
+            <section id="home-media" class="home-section">
+                <div class="row text-center">
+                    <h1 class="section-header">Media Coverage</h1>
+                </div>
+                <div class="row">
+                    <div class="columns medium-4 img-container">
+                        <a href="http://www.ctvnews.ca/video?clipId=530234&amp;playlistId=1.2187782&amp;binId=1.810401&amp;playlistPageNum=1&amp;binPageNum=1&amp;hootPostID=37ff3bd5c7d92eb6d6976031c0394feb" target="_blank">
+                            <img src="https://www.canadianopendataexperience.ca/inc/img/outlets/ctv.png" alt="CTV News">
+                        </a>
+                    </div>
+                    <div class="columns medium-4 img-container">
+                        <a href="http://globalnews.ca/news/1841898/48-hour-hackathon-invites-techies-to-create-apps-with-government-data/" target="_blank">
+                            <img src="https://www.canadianopendataexperience.ca/inc/img/outlets/global.png" alt="Global News">
+                        </a>
+                    </div>
+                    <div class="columns medium-4 img-container">
+                        <a href="http://www.btvancouver.ca/videos/4076191020001/" target="_blank">
+                            <img src="https://www.canadianopendataexperience.ca/inc/img/outlets/bt.png" alt="Breakfast Television">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="home-sponsors" class="home-section">
+                <div class="row text-center">
+                    <h1 class="section-header">Sponsors</h1>
+                </div>
+                <div class="row text-center">
+                    <p><a href="http://open.canada.ca/data/" target="_blank"><img src="https://www.canadianopendataexperience.ca/inc/img/canada-logo.png" alt="Government of Canada" class="home-sponsor-img" id="sponsor-GovernmentofCanada"></a></p><p><a href="http://www.ibm.com/" target="_blank"><img src="https://www.canadianopendataexperience.ca/inc/img/sponsors/ibm.png" alt="IBM" class="home-sponsor-img" id="sponsor-IBM"></a></p>	</div>
+            </section>
+
+
+            <script async="" src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.fr.DV-jc6yrMbo.O/m=auth/exm=client,signin/rt=j/sv=1/d=1/ed=1/am=QQ/rs=AGLTcCPiK_nj4QCML4Uqryed4s8OqOZj6Q/t=zcms/cb=gapi.loaded_1"></script><script async="" src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.fr.DV-jc6yrMbo.O/m=client,signin/rt=j/sv=1/d=1/ed=1/am=QQ/rs=AGLTcCPiK_nj4QCML4Uqryed4s8OqOZj6Q/t=zcms/cb=gapi.loaded_0"></script><script src="//www.google-analytics.com/analytics.js" async=""></script><script src="//connect.facebook.net/en_GB/sdk.js" id="facebook-jssdk"></script><script>
+            var arrowsDisplayed = true;
+            var homePage = true;
+            var showPopup = true;
+            </script>	
+
+
+            <div id="mailing-list">
+                <div class="row">
+
+                    <div class="medium-8 columns">
+                        <h4>Mailing List</h4>
+                        <p>Sign up to be notified for all our announcements and updates.</p>
+                    </div>
+
+
+                    <div class="medium-4 columns">
+                        <div id="list-container">
+                            <form id="mailchimp-form" method="post" action="">
+                                <div class="row collapse margintop-10px">
+                                    <div class="small-8 medium-8 columns">
+                                        <input name="listEmail" id="listEmail" placeholder="email@example.com" required="" type="email">
+                                        <small id="list-error" class="error">Please enter a valid email.</small>
+                                    </div>
+                                    <div class="small-4 medium-4 columns">
+                                        <input href="#" class="postfix small button expand square" value="Sign Up" type="submit">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="list-success">
+                            <p>Success! Thanks for signing up.  Check your inbox for a confirmation email.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <footer>
+
+                <div class="row">
+                    <div class="medium-4 medium-4 push-8 columns small-text-center">
+                        <ul class="inline-list social-links">
+                            <li><a href="mailto:CODE@xmgstudio.com" title=""><i class="fa fa-envelope fa-2x"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCpCOV3wD0tFKKM5pqsv3uHg" title="YouTube" target="_blank"><i class="fa fa-youtube fa-2x"></i></a></li>
+                            <li><a href="https://www.facebook.com/CanadianOpenDataExperience" title="Facebook" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+                            <li><a href="https://twitter.com/CODE_Hackathon" title="Twitter" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="medium-8 medium-8 pull-4 columns hide-for-small">
+                        <ul class="inline-list site-links">
+                            <li><a href="https://www.canadianopendataexperience.ca/media/">Media</a></li>
+                            <li><a href="https://www.canadianopendataexperience.ca/contact/">Contact Us</a></li>
+                            <li><a href="https://www.canadianopendataexperience.ca/privacy/">Privacy Policy</a></li>
+                            <li><a href="https://www.canadianopendataexperience.ca/terms/">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="medium-12 columns text-right small-only-text-center">
+                        <p>Copyright © 2015 <a href="http://www.xmg.com/" title="XMG Studio Inc." target="_blank">XMG Studio Inc.</a></p>
+                    </div>
+                </div>
+
+            </footer>
+
+            <a class="exit-off-canvas"></a>
+
+        </div>
+    </div>
+    <div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="https://s-static.ak.facebook.com/connect/xd_arbiter/xRlIuTsSMoE.js?version=41#channel=f836f3a244b4b8&amp;origin=https%3A%2F%2Fwww.canadianopendataexperience.ca" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_https" scrolling="no" allowfullscreen="true" allowtransparency="true" name="fb_xdm_frame_https" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+
+    <script>
+        var baseURL = "https://www.canadianopendataexperience.ca/";
+        var facebookAppID = "863588270329359";
+        var textInvite = "Invite";
+        var textReadMore = "read more";
+        var textMore = "More";
+        var textReadLess = "read less";
+        var textLess = "Less";
+        var textRemove = "Remove";
+        var textCancel = "Cancel";
+        var textVipHub = "VIP HUB";
+        var textPartnerHub= "Partner HUB";
+        var textUploadPhoto = "Upload Photo";
+        var textVote = "Vote";
+        var textVoted = "Voted";
+        var popupFanVoting = "<a href=\"https://www.canadianopendataexperience.ca/news/voting-starts-march-6th-for-the-code-5000-fan-favourite-prize\">VOTE NOW</a> for your favourite #CODE2015 open data app!";
+        var locale = "en_GB";
+    </script>
+
+    <script src="https://www.canadianopendataexperience.ca/inc/js/respond.min.js"></script>
+    <script src="https://www.canadianopendataexperience.ca/inc/js/vendor/modernizr.js"></script>
+    <script src="https://www.canadianopendataexperience.ca/inc/js/vendor/jquery.js"></script>
+    <script src="https://www.canadianopendataexperience.ca/inc/js/TweenMax.min.js"></script>
+    <script src="https://www.canadianopendataexperience.ca/inc/js/jquery.scrollmagic.min.js"></script>
+    <script src="https://www.canadianopendataexperience.ca/inc/js/jquery.autosize.min.js"></script>
+    <script src="https://www.canadianopendataexperience.ca/inc/js/readmore.min.js"></script>
+    <script src="https://www.canadianopendataexperience.ca/inc/js/dropzone/dropzone.min.js"></script>
+    <script src="https://www.canadianopendataexperience.ca/inc/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script src="https://www.canadianopendataexperience.ca/inc/js/noty/packaged/jquery.noty.packaged.min.js"></script>
+    <script src="https://www.canadianopendataexperience.ca/inc/js/noty/themes/relax.js"></script>
+    <script src="https://www.canadianopendataexperience.ca/inc/js/vendor/fastclick.js"></script>
+    <script src="https://www.canadianopendataexperience.ca/inc/js/foundation.min.js"></script>
+    <script src="https://www.canadianopendataexperience.ca/inc/js/scrollspy.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js"></script>
+    <script src="https://www.canadianopendataexperience.ca/inc/js/code.js?v=1.1.7"></script>
+
+    <form id="fb-form" method="post" action=""><input id="fb_id" name="fb_id" value="" type="hidden"><input id="fb_token" name="fb_token" value="" type="hidden"></form><form id="google-form" method="post" action=""><input id="google_code" name="google_code" value="" type="hidden"><input id="google_token" name="google_token" value="" type="hidden"></form><div class="hidden"><div id="___signin_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 1px; height: 1px; position: relative;"><button style="opacity: 0; z-index: 10000; left: 0px; top: 0px; position: absolute; cursor: pointer; outline: 0px none; width: 1px; height: 1px;">Se connecter avec Google</button><iframe title="Se connecter avec Google" data-gapiattached="true" src="https://apis.google.com/u/0/_/widget/render/signin?usegapi=1&amp;cookiepolicy=single_host_origin&amp;accesstype=offline&amp;redirecturi=postmessage&amp;clientid=627898207575-iu0hg2l6vnvlu1fo88qu47k43icn7h9r.apps.googleusercontent.com&amp;scope=email%20profile&amp;origin=https%3A%2F%2Fwww.canadianopendataexperience.ca&amp;url=https%3A%2F%2Fwww.canadianopendataexperience.ca%2F&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.fr.DV-jc6yrMbo.O%2Fm%3D__features__%2Fam%3DQQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCPiK_nj4QCML4Uqryed4s8OqOZj6Q#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conauth%2Conload&amp;id=I0_1436903396690&amp;parent=https%3A%2F%2Fwww.canadianopendataexperience.ca&amp;pfname=&amp;rpctoken=25126143" name="I0_1436903396690" id="I0_1436903396690" vspace="0" tabindex="0" style="position: static; top: 0px; width: 1px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 1px;" scrolling="no" marginwidth="0" marginheight="0" hspace="0" frameborder="0" width="100%"></iframe></div></div><script src="https://www.canadianopendataexperience.ca/inc/js/social.js"></script><script gapi_processed="true" src="//apis.google.com/js/client:platform.js?onload=start" async="" defer=""></script>	<script>
+    $(document).foundation();
+    </script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-44772319-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
+
+    <iframe tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;" src="https://accounts.google.com/o/oauth2/postmessageRelay?parent=https%3A%2F%2Fwww.canadianopendataexperience.ca#rpctoken=787147439&amp;forcesecure=1" id="oauth2relay337980944" name="oauth2relay337980944"></iframe><iframe style="width: 1px; height: 1px; position: absolute; top: -100px;" src="https://accounts.google.com/o/oauth2/auth?client_id=627898207575-iu0hg2l6vnvlu1fo88qu47k43icn7h9r.apps.googleusercontent.com&amp;response_type=code%20token%20id_token%20gsession&amp;scope=email%20profile&amp;access_type=offline&amp;cookie_policy=single_host_origin&amp;immediate=true&amp;include_granted_scopes=true&amp;proxy=oauth2relay337980944&amp;redirect_uri=postmessage&amp;origin=https%3A%2F%2Fwww.canadianopendataexperience.ca&amp;state=631879528%7C0.2542085198&amp;authuser=0&amp;e=3100077"></iframe></body>

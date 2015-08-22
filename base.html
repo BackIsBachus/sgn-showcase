@@ -1,25 +1,194 @@
-<!DOCTYPE html>
-<html class="js" lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>base</title>
-    <link rel="stylesheet" href="css/app.css" />
-    <link rel="stylesheet" href="bower_components/foundation/css/foundation-icons.css" />
-    <link rel="stylesheet" href="css/label.min.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.magellan.js"></script>  
-    <script src="bower_components/foundation/js/foundation/foundation.interchange.js"></script>
-    <script src="js/app.js"></script>
-  </head>
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <!-- if you remove this meta tag, the NSA will spy on you through your Xbox Kinect camera -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Base</title>
+        <link rel="stylesheet" href="css/app.css" />
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css">
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+        <script src="bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
+        <script src="bower_components/fullpage.js/jquery.fullPage.min.js"></script>
+    </head>
+
     <body>
-        
-        
-        
-        
+
+<div id="header">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#">My Site</a></h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="left">
+        <li class="active"><a href="#">Right Button Active</a></li>
+        <li class="has-dropdown">
+          <a href="#">Right Button Dropdown</a>
+          <ul class="dropdown">
+            <li><a href="#">First link in dropdown</a></li>
+            <li class="active"><a href="#">Active link in dropdown</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li><a href="#">Left Nav Button</a></li>
+      </ul>
+    </section>
+  </nav>
+</div>
+
+<div id="fullpage">
+  <div class="section " id="section0">
+    <div class="intro row">
+      <div class="row">
+        <div class="small-12 columns">
+          <h1 id="title">Super title of the dead underground</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 medium-6 large-6 columns justify">
+          <div class="small-12 columns justify">
+            <p>Loreù ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel convallis lacus, vel luctus nibh. Pellentesque iaculis viverra aliquam.</p>
+          </div>
+          <div class="small-12 columns justify">
+            <p>Loreù ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel convallis lacus, vel luctus nibh. Pellentesque iaculis viverra aliquam.</p>
+          </div>
+        </div>
+        <div class="small-12 medium-6 large-6 columns justify">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel convallis lacus, vel luctus nibh. Pellentesque iaculis viverra aliquam. Maecenas ac suscipit diam. Proin aliquam ultricies elit, quis blandit lacus malesuada sed. Suspendisse
+            fringilla bibendum dapibus. Curabitur sit amet maximus risus. Aenean mollis dui mauris, a gravida ante porta vitae. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="section1">
+    <div class="slide" id="slide1">
+      <div class="intro">
+        <div class="row">
+          <div class="small-12 columns">
+            <h1>Step 1</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-6 large-6 columns">
+            <p class="center">
+              A pretty image
+            </p>
+          </div>
+          <div class="small-12 medium-6 large-6 columns">
+            <p class="center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel ipsum congue diam ultricies aliquam quis ut erat. Vivamus ac ornare dui, eget vulputate nisi. Donec vitae tincidunt est. Pellentesque sit amet finibus libero. Maecenas eleifend
+              fermentum sollicitudin. Duis et commodo turpis. Aliquam sed purus sed ligula aliquet tempus a et dui. Vestibulum venenatis vulputate ultrices. Vestibulum vulputate ante rhoncus leo pharetra tincidunt. Nunc nec dolor sapien. Cras sit amet
+              orci nisl. Sed lobortis congue est, nec varius lorem porttitor in. Pellentesque a fermentum erat. Nulla a libero nisi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="slide2">
+      <div class="intro">
+        <div class="row">
+          <div class="small-12 columns">
+            <h1>Step 2</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-6 large-6 columns">
+            <p class="center">
+              A pretty image
+            </p>
+          </div>
+          <div class="small-12 medium-6 large-6 columns">
+            <p class="center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel ipsum congue diam ultricies aliquam quis ut erat. Vivamus ac ornare dui, eget vulputate nisi. Donec vitae tincidunt est. Pellentesque sit amet finibus libero. Maecenas eleifend
+              fermentum sollicitudin. Duis et commodo turpis. Aliquam sed purus sed ligula aliquet tempus a et dui. Vestibulum venenatis vulputate ultrices. Vestibulum vulputate ante rhoncus leo pharetra tincidunt. Nunc nec dolor sapien. Cras sit amet
+              orci nisl. Sed lobortis congue est, nec varius lorem porttitor in. Pellentesque a fermentum erat. Nulla a libero nisi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="slide3">
+      <div class="intro">
+        <div class="row">
+          <div class="small-12 columns">
+            <h1>Step 3</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-6 large-6 columns">
+            <p class="center">
+              A pretty image
+            </p>
+          </div>
+          <div class="small-12 medium-6 large-6 columns">
+            <p class="center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel ipsum congue diam ultricies aliquam quis ut erat. Vivamus ac ornare dui, eget vulputate nisi. Donec vitae tincidunt est. Pellentesque sit amet finibus libero. Maecenas eleifend
+              fermentum sollicitudin. Duis et commodo turpis. Aliquam sed purus sed ligula aliquet tempus a et dui. Vestibulum venenatis vulputate ultrices. Vestibulum vulputate ante rhoncus leo pharetra tincidunt. Nunc nec dolor sapien. Cras sit amet
+              orci nisl. Sed lobortis congue est, nec varius lorem porttitor in. Pellentesque a fermentum erat. Nulla a libero nisi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="section" id="section2">
+    <div class="intro">
+      <div class="row">
+        <div class="small-12 columns center">
+          <h1>Modal test</h1>
+<a href="#" data-reveal-id="myModal">Click Me For A Modal</a>
+          <ul class="clearing-thumbs small-block-grid-4">
+            <li><a href="#" data-reveal-id="myModal"><img src="https://c1.staticflickr.com/9/8425/7688480774_8d029fec07.jpg"></a></li>
+            <li><a href="#" data-reveal-id="myModal"><img src="http://media.mediatemple.netdna-cdn.com/wp-content/uploads/2013/03/Wordpress-start-image.jpg"></a></li>
+            <li><a href="#" data-reveal-id="myModal"><img src="https://c1.staticflickr.com/9/8425/7688480774_8d029fec07.jpg"></a></li>
+            <li><a href="#" data-reveal-id="myModal"><img src="https://c1.staticflickr.com/9/8425/7688480774_8d029fec07.jpg"></a></li>
+            <li><a href="#" data-reveal-id="myModal"><img src="https://c1.staticflickr.com/9/8425/7688480774_8d029fec07.jpg"></a></li>
+            <li><a href="#" data-reveal-id="myModal"><img src="https://c1.staticflickr.com/9/8425/7688480774_8d029fec07.jpg"></a></li>
+            <li><a href="#" data-reveal-id="myModal"><img src="https://c1.staticflickr.com/9/8425/7688480774_8d029fec07.jpg"></a></li>
+            <li><a href="#" data-reveal-id="myModal"><img src="https://c1.staticflickr.com/9/8425/7688480774_8d029fec07.jpg"></a></li>
+          </ul>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Awesome. I have it.</h2>
+  <p class="lead">Your couch.  It is mine.</p>
+  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+  <img src="https://c1.staticflickr.com/9/8425/7688480774_8d029fec07.jpg">
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.topbar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.reveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.clearing.min.js"></script>
+
+<script>
+  $(document).foundation();
+</script>
     </body>
+
 </html>
