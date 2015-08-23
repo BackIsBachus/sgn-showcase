@@ -67,7 +67,7 @@ $rem-base: 16px;
 // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
- $base-font-size: 100%;
+ $base-font-size: 120%;
 
 // The $base-font-size is 100% while $base-line-height is 150%
  $base-line-height: 150%;
@@ -119,9 +119,14 @@ $include-html-global-classes: $include-html-classes;
  $jet         : #222222;
  $black       : #000000;
 
+$menu-active  : $black;
+$menu-bg      : $oil;
+$asso-bg      : #D4FF7C;
+$fede-bg      : #39B5E5;
+
 // We use these as default colors throughout
- $primary-color: blue;
- $primary-color-hover: #007F38;
+ $primary-color: $white;
+ $primary-color-hover: $jet;
  $secondary-color: #E3AB0B;
  $secondary-color-hover: #CC8A14; 
  $alert-color: #f04124;
@@ -130,11 +135,12 @@ $include-html-global-classes: $include-html-classes;
  $info-color: #a0d3e8;
 
 // We use these to control various global styles
- $body-bg: $oil;
- $body-font-color: $ghost;
+ $body-bg: $white;
+ $body-font-color: $black;
  $body-font-family: $font-family-sans-serif;
  $body-font-weight: $font-weight-normal;
  $body-font-style: normal;
+ $title-font-color: $jet;
 
 // We use this to control font-smoothing
 $font-smoothing: antialiased;
@@ -1407,7 +1413,7 @@ $tooltip-max-width: 300px;
 $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: $black;
+$topbar-bg-color: $menu-bg;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1422,14 +1428,14 @@ $topbar-title-font-size: rem-calc(17);
 $topbar-link-color: $white;
 $topbar-link-color-hover: $white;
 $topbar-link-color-active: $white;
-$topbar-link-color-active-hover: $white;
+$topbar-link-color-active-hover: $jet;
 $topbar-link-weight: $font-weight-normal;
 $topbar-link-font-size: rem-calc(13);
 $topbar-link-hover-lightness: -10%; // Darken by 10%
 $topbar-link-bg: $topbar-bg;
 $topbar-link-bg-hover: $jet;
 $topbar-link-bg-color-hover: $charcoal;
-$topbar-link-bg-active: $primary-color;
+$topbar-link-bg-active: $menu-active;
 $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 $topbar-link-font-family: $body-font-family;
 $topbar-link-text-transform: none;

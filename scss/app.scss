@@ -42,46 +42,50 @@
 
 
 .fullWidth {
-   width: 100%;
-   margin-left: auto;
-   margin-right: auto;
-   max-width: initial;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
 }
-.primary-bg {
-    background: $primary-color;
-}
-.secondary-bg {
-    background: $secondary-color;
-}
-.nav-container {
-    -webkit-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.51);
-    -moz-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.51);
-    box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.51);
-    -webkit-backface-visibility: hidden;
-    z-index: 5000; }
 
-.site-logo {
-    height: 40px;
-    width: 120px;
-    padding: 3px 0px 5px 0px; }
+#affiche-thumb{
+    height: 200px;   
+}
 
-body, h1, h2, h3 {
+#promo {
+    border: none;
+    margin-top: 10px;
+}
+
+.img-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#affiche-modal {
+    max-height: 500px;
+    width: auto;
+}
+
+#titles {
+    margin-bottom: 20px;   
+}
+
+body, h1, h2, h3, p {
     font-family: 'Jura', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
 }
 h1, h2 {
-    font-size: 3em;
+    //    font-size: 3em;
     color: #222;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.intro p {
-    color: #222;
-
-#header,
-#footer {
+#header, #footer {
     position: fixed;
     display: block;
     width: 100%;
@@ -104,4 +108,24 @@ h1, h2 {
 
 .justify{
     text-align: justify;
+}
+#asso {
+    background: $asso-bg;   
+}
+#federation {
+    background: $fede-bg;   
+}
+
+h1, h2, h3, h4 {
+    color: $title-font-color;
+}
+a {
+    color: blue;   
+}
+a:hover {
+    color: #4D6066;   
+}
+.middle {
+    display:inline-block;
+    vertical-align:middle;
 }
