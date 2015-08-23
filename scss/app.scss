@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Jura:500,600);
 @import "settings";
 @import "foundation";
 
@@ -39,21 +40,7 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
-.hollow {
-    font-size: 70px;
-    color: #31E300;
-    text-shadow: 0px 0px 5px #FFF, 0px 0px 10px #FFF, 0px 0px 15px #FFF, 0px 0px 20px #31E300, 0px 0px 30px #31E300, 0px 0px 40px #31E300, 0px 0px 50px #31E300, 0px 0px 75px #31E300;
-}
-.relief-down {
-    font-size: 70px;
-    color: rgba(245, 159, 26, 0.8);
-    text-shadow: 1px 4px 6px #FFF, 0px 0px 0px #000, 1px 4px 6px #FFF;
-}
-.relief-up {
-    font-size: 70px;
-    color: lightcoral;
-    text-shadow: 0px 1px 0px #0092B3, 0px 2px 0px #0087A6, 0px 3px 0px #008099, 0px 4px 0px #00758C, 0px 5px 0px #555, 0px 6px 0px #006A80, 0px 0px 0px #006073, 0px 8px 7px #056;
-}
+
 .fullWidth {
    width: 100%;
    margin-left: auto;
@@ -78,46 +65,43 @@
     width: 120px;
     padding: 3px 0px 5px 0px; }
 
-/* to adjust for fixed navbar */
-a.anchor {
+body, h1, h2, h3 {
+    font-family: 'Jura', sans-serif;
+    font-weight: 500;
+}
+h1, h2 {
+    font-size: 3em;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.intro p {
+    color: #222;
+
+#header,
+#footer {
+    position: fixed;
     display: block;
-    position: relative;
-    top: -45px;
-    visibility: hidden; }
-/* Landing page styles */
-#home-landing {
-    background-color: #333333;
-    color: white;
-    height: 100vh;
-    min-height: 350px;
-    background: url(../img/home/banner.png);
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-#home-landing h1 {
-    font-family: 'ChampagneLimousines';
-    color: $iron;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-weight: 700;
-    margin-bottom: 0px; }
-#home-landing h1 .green {
-    color: #006f00 !important; }
-#home-landing h5 {
-    font-family: 'ChampagneLimousines';
-    color: #737373;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-weight: 700;
-    margin-bottom: 0px; }
-#home-landing h5 .green {
-    color: #006f00 !important; }
-#home-landing #home-code-logo {
-    height: 150px;
-    width: auto;
-    padding: 0px 0px 20px 0px; }
-#home-landing #home-logo-section {
-    padding-top: 22vh; }
+    width: 100%;
+    z-index: 9;
+    color: #f2f2f2;
+    padding: 0px 0 0 0;
+}
+
+#header {
+    top: 0px;
+}
+
+#footer {
+    bottom: 0px;
+}
+
+.center {
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+}
