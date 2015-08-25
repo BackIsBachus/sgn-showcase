@@ -48,60 +48,6 @@
     margin-right: auto;
     max-width: initial;
 }
-
-#affiche-thumb{
-    height: 200px;   
-}
-
-#promo {
-    border: none;
-    margin-top: 10px;
-}
-
-.img-center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-}
-
-#affiche-modal {
-    max-height: 500px;
-    width: auto;
-}
-
-#titles {
-    margin-bottom: 20px;   
-}
-
-body, h1, h2, h3, p {
-    font-family: 'Jura', sans-serif;
-    font-weight: 600;
-}
-h1, h2 {
-    //    font-size: 3em;
-    color: #222;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-#header, #footer {
-    position: fixed;
-    display: block;
-    width: 100%;
-    z-index: 9;
-    color: #f2f2f2;
-    padding: 0px 0 0 0;
-}
-
-#header {
-    top: 0px;
-}
-
-#footer {
-    bottom: 0px;
-}
-
 .center {
     text-align: center;
 }
@@ -109,18 +55,12 @@ h1, h2 {
 .justify{
     text-align: justify;
 }
-#asso {
-    background: $asso-bg;   
-}
-#federation {
-    background: $fede-bg;   
-}
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
     color: $title-font-color;
 }
 a {
-    color: blue;   
+    color: lightblue;   
 }
 a:hover {
     color: #4D6066;   
@@ -129,6 +69,40 @@ a:hover {
     display:inline-block;
     vertical-align:middle;
 }
-.carbon{
+#trailer{
+    border: none;
+    padding-top: 10px;
+}
 
+.section{
+ padding-bottom: 10px;   
+}
+
+.content{
+       position: absolute;
+       top: 40px; /* Header Height */
+     //  bottom: 20px; /* Footer Height */
+       width: 100%;
+    }
+
+@mixin carbon($base) {
+$delta1: #020202;
+$delta2: #0d0d0d;
+$delta3: #080808;
+$delta4: #0a0a0a;
+$delta5: #030303;
+$delta6: #070707;
+  background:
+    linear-gradient(27deg, $base + $delta1 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, $base + $delta1 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, $base + $delta1 + $delta2 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, $base + $delta1 + $delta2 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, $base + $delta3 10px, transparent 10px),
+    linear-gradient($base + $delta4 25%, $base + $delta4 - $delta5 25%, $base + $delta4 - $delta5 50%, transparent 50%, transparent 75%, $base + $delta4 + $delta6 75%, $base + $delta4 + $delta6);
+  background-color: $base;
+  background-size: 20px 20px;
+}
+
+.carbon {
+  @include carbon(#131313);
 }
