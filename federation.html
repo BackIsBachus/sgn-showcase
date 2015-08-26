@@ -15,8 +15,8 @@
 
     <body id="federation">
 
-        <div id="header fixed">
-            <nav class="top-bar" data-topbar role="navigation">
+        <div id="header" class="sticky">
+            <nav class="top-bar fixed" data-topbar role="navigation">
                 <ul class="title-area">
                     <li class="name">
                         <h1><a href="#">Student Gaming Network</a></h1>
@@ -27,7 +27,13 @@
                 <section class="top-bar-section">
                     <ul class="left">
                         <li class=""><a href="index.html">Accueil</a></li>
-                        <li class="active"><a href="#">La Fédération</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Le Tournoi</a>
+                            <ul class="dropdown">
+                                <li class="active"><a href="heartstone.html">Hearthstone</a></li>
+                                <li class=""><a href="lol.html">League of Legends</a></li>
+                            </ul>
+                        <li class=""><a href="#">La Fédération</a></li>
                         <li class=""><a href="asso.html">Les Associations</a></li>
                     </ul>
 
