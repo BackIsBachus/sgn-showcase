@@ -67,6 +67,10 @@ footer ul {
     list-style-type:none
 }
 
+footer h3{
+    color: #2BCF4A;
+}
+
 .fb{
     color: #3A5795;
 }
@@ -102,6 +106,17 @@ footer ul {
     width: 100%;
 }
 
+.button-lol{
+    background: orange;  
+    color: white;
+    margin-top: 5px;
+}
+.button-hs{
+    background: blue; 
+    color: white;
+    margin-top: 5px;
+}
+
 @mixin carbon($base) {
     $delta1: #020202;
     $delta2: #0d0d0d;
@@ -126,4 +141,13 @@ footer ul {
 
 .carbon-blue {
     @include carbon(#000013);
+}
+.carbon-green {
+    @include carbon(#001300);
+}
+.carbon-cyan {
+    @include carbon(#001313);
+}
+.carbon-orange {
+    @include carbon(#191004);
 }
