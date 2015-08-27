@@ -58,6 +58,30 @@ a {
 a:hover {
     color: #4D6066;   
 }
+footer {
+    background: $jet;
+}
+
+footer ul {
+    font-size: 75%; 
+    list-style-type:none
+}
+
+.fb{
+    color: #3A5795;
+}
+
+.linkedin{
+    color: #1A85BC;   
+}
+
+.twitter {
+    color: #55ACEE;   
+}
+.email{
+    color: white;
+}
+
 .middle {
     display:inline-block;
     vertical-align:middle;
@@ -68,34 +92,38 @@ a:hover {
 }
 
 .section{
- padding-bottom: 10px;   
+    padding-bottom: 10px;   
 }
 
 .content{
-       position: absolute;
-       top: 40px; /* Header Height */
-     //  bottom: 20px; /* Footer Height */
-       width: 100%;
-    }
+    position: absolute;
+    top: 40px; /* Header Height */
+    //  bottom: 20px; /* Footer Height */
+    width: 100%;
+}
 
 @mixin carbon($base) {
-$delta1: #020202;
-$delta2: #0d0d0d;
-$delta3: #080808;
-$delta4: #0a0a0a;
-$delta5: #030303;
-$delta6: #070707;
-  background:
-    linear-gradient(27deg, $base + $delta1 5px, transparent 5px) 0 5px,
-    linear-gradient(207deg, $base + $delta1 5px, transparent 5px) 10px 0px,
-    linear-gradient(27deg, $base + $delta1 + $delta2 5px, transparent 5px) 0px 10px,
-    linear-gradient(207deg, $base + $delta1 + $delta2 5px, transparent 5px) 10px 5px,
-    linear-gradient(90deg, $base + $delta3 10px, transparent 10px),
-    linear-gradient($base + $delta4 25%, $base + $delta4 - $delta5 25%, $base + $delta4 - $delta5 50%, transparent 50%, transparent 75%, $base + $delta4 + $delta6 75%, $base + $delta4 + $delta6);
-  background-color: $base;
-  background-size: 20px 20px;
+    $delta1: #020202;
+    $delta2: #0d0d0d;
+    $delta3: #080808;
+    $delta4: #0a0a0a;
+    $delta5: #030303;
+    $delta6: #070707;
+    background:
+        linear-gradient(27deg, $base + $delta1 5px, transparent 5px) 0 5px,
+        linear-gradient(207deg, $base + $delta1 5px, transparent 5px) 10px 0px,
+        linear-gradient(27deg, $base + $delta1 + $delta2 5px, transparent 5px) 0px 10px,
+        linear-gradient(207deg, $base + $delta1 + $delta2 5px, transparent 5px) 10px 5px,
+        linear-gradient(90deg, $base + $delta3 10px, transparent 10px),
+        linear-gradient($base + $delta4 25%, $base + $delta4 - $delta5 25%, $base + $delta4 - $delta5 50%, transparent 50%, transparent 75%, $base + $delta4 + $delta6 75%, $base + $delta4 + $delta6);
+    background-color: $base;
+    background-size: 20px 20px;
 }
 
 .carbon {
-  @include carbon(#131313);
+    @include carbon(#131313);
+}
+
+.carbon-blue {
+    @include carbon(#000013);
 }
