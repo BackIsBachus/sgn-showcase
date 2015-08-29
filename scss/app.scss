@@ -49,7 +49,7 @@
     max-width: initial;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, strong {
     color: $title-font-color;
 }
 a {
@@ -59,7 +59,7 @@ a:hover {
     color: #4D6066;   
 }
 footer {
-    background: $jet;
+    background: $fixed-bg;
 }
 
 footer ul {
@@ -100,9 +100,8 @@ footer h3{
 }
 
 .content{
-    position: absolute;
-    top: 40px; /* Header Height */
-    bottom: 250px; /* Footer Height */
+    top: 0px;
+    bottom: 0px;
     width: 100%;
     height: 100%;
 }
@@ -118,7 +117,7 @@ footer h3{
     margin-top: 5px;
 }
 
-@mixin carbon($base) {
+@mixin carbon($color:#131313) {
     $delta1: #020202;
     $delta2: #0d0d0d;
     $delta3: #080808;
@@ -126,15 +125,58 @@ footer h3{
     $delta5: #030303;
     $delta6: #070707;
     background:
-        linear-gradient(27deg, $base + $delta1 5px, transparent 5px) 0 5px,
-        linear-gradient(207deg, $base + $delta1 5px, transparent 5px) 10px 0px,
-        linear-gradient(27deg, $base + $delta1 + $delta2 5px, transparent 5px) 0px 10px,
-        linear-gradient(207deg, $base + $delta1 + $delta2 5px, transparent 5px) 10px 5px,
-        linear-gradient(90deg, $base + $delta3 10px, transparent 10px),
-        linear-gradient($base + $delta4 25%, $base + $delta4 - $delta5 25%, $base + $delta4 - $delta5 50%, transparent 50%, transparent 75%, $base + $delta4 + $delta6 75%, $base + $delta4 + $delta6);
-    background-color: $base;
+        linear-gradient(27deg, $color + $delta1 5px, transparent 5px) 0 5px,
+        linear-gradient(207deg, $color + $delta1 5px, transparent 5px) 10px 0px,
+        linear-gradient(27deg, $color + $delta1 + $delta2 5px, transparent 5px) 0px 10px,
+        linear-gradient(207deg, $color + $delta1 + $delta2 5px, transparent 5px) 10px 5px,
+        linear-gradient(90deg, $color + $delta3 10px, transparent 10px),
+        linear-gradient($color + $delta4 25%, $color + $delta4 - $delta5 25%, $color + $delta4 - $delta5 50%, transparent 50%, transparent 75%, $color + $delta4 + $delta6 75%, $color + $delta4 + $delta6);
+    background-color: $color;
     background-size: 20px 20px;
 }
+
+
+@mixin stripes($color1:#2BFFF8, $color2:#000000){
+    padding: 0px;
+    /* IE10 Consumer Preview */
+
+    background-image: -ms-radial-gradient(center, ellipse farthest-corner, $color1 0%, $color2 100%);
+    /* Mozilla Firefox */
+
+    background-image: -moz-radial-gradient(center, ellipse farthest-corner, $color1 0%, $color2 100%);
+    /* Opera */
+
+    background-image: -o-radial-gradient(center, ellipse farthest-corner, $color1 0%, $color2 100%);
+    /* Webkit (Safari/Chrome 10) */
+
+    background-image: -webkit-gradient(radial, center center, 0, center center, 497, color-stop(0, $color1), color-stop(1, $color2));
+    /* Webkit (Chrome 11+) */
+
+    background-image: -webkit-radial-gradient(center, ellipse farthest-corner, $color1 0%, $color2 100%);
+    /* W3C Markup, IE10 Release Preview */
+
+    background-image: radial-gradient(center, ellipse farthest-corner, $color1 0%, $color2 100%);
+}
+
+.stripes{
+    @include stripes(#303030, #050505);
+}
+
+.stripes-blue{
+    @include stripes(#16254A, #000000);
+}
+
+.stripes-green{
+    @include stripes(#008200, #000000);
+}
+
+.stripes-gold{
+    @include stripes(#634423, #000000);
+}
+.stripes-cyan{
+    @include stripes(#2F7874, #000000);
+}
+
 
 .carbon {
     @include carbon(#131313);
@@ -150,30 +192,30 @@ footer h3{
     @include carbon(#001313);
 }
 .carbon-orange {
-    @include carbon(#191004);
+    @include carbon(#926434);
 }
 
 .hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
 }
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .lol-logo{
-    
+
 }
 
 .hs-logo{
@@ -197,4 +239,36 @@ footer h3{
 
 .description{
     margin-top: 10px;
+}
+
+.tournoi-tab{
+    margin-bottom: 15px;   
+}
+
+.accent {
+    color: #FF1C48;
+}
+.halign{
+    display:block;
+    margin:auto;
+}
+
+.hs-step{
+    margin-bottom: 5px;  
+}
+
+.scrolled {
+    padding-top: 45px;   
+}
+
+.parent{
+    display: table;
+}
+
+.child{
+    display: table-cell;
+    vertical-align: middle;
+}
+.toornament{
+ z-index: 100000;   
 }

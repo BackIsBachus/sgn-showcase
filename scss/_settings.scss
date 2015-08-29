@@ -119,10 +119,12 @@ $include-html-global-classes: $include-html-classes;
  $jet         : #222222;
  $black       : #000000;
 
-$menu-active  : $black;
-$menu-bg      : $oil;
+$fixed-bg     : #121212;
+$menu-active  : $tuatara;
+$menu-bg      : $fixed-bg;
 $asso-bg      : #D4FF7C;
 $fede-bg      : #39B5E5;
+
 
 // We use these as default colors throughout
  $primary-color: $white;
@@ -140,7 +142,7 @@ $fede-bg      : #39B5E5;
  $body-font-family: $font-family-sans-serif;
  $body-font-weight: $font-weight-normal;
  $body-font-style: normal;
- $title-font-color: #3AC4FF;
+ $title-font-color: #3296FF;
 
 // We use this to control font-smoothing
 $font-smoothing: antialiased;
@@ -1446,10 +1448,10 @@ $topbar-button-font-size: .75rem;
 $topbar-button-top: 7px;
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: $oil;
+$topbar-dropdown-bg: $topbar-bg;
 $topbar-dropdown-link-color: $white;
 $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
-$topbar-dropdown-link-bg: $oil;
+$topbar-dropdown-link-bg: $topbar-bg;
 $topbar-dropdown-link-bg-hover: $jet;
 $topbar-dropdown-link-weight: $font-weight-normal;
 $topbar-dropdown-toggle-size: 5px;
