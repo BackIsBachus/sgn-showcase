@@ -255,20 +255,14 @@ footer h3{
 
 .hs-step{
     margin-bottom: 5px;  
+    height: 150px;
+    widows: auto;
 }
 
 .scrolled {
     padding-top: 45px;   
 }
 
-.parent{
-    display: table;
-}
-
-.child{
-    display: table-cell;
-    vertical-align: middle;
-}
 .toornament{
     text-align: center;
     width:100%;  
@@ -278,4 +272,17 @@ footer h3{
 .iframe{
     display:block;
     border: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.item{
+    align-self: center;
 }
