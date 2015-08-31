@@ -223,6 +223,10 @@ footer h3{
     margin-bottom: 15px;
 }
 
+.lol-step{
+
+}
+
 .asso{
     border-color: black;
     margin-bottom: 0px;
@@ -259,6 +263,8 @@ footer h3{
     widows: auto;
 }
 
+
+
 .scrolled {
     padding-top: 45px;   
 }
@@ -274,7 +280,7 @@ footer h3{
     border: none;
 }
 
-.container {
+.step-wrap {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -283,6 +289,6 @@ footer h3{
     justify-content: center;
 }
 
-.item{
+.step{
     align-self: center;
 }
