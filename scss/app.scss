@@ -49,7 +49,7 @@
     max-width: initial;
 }
 
-h1, h2, h3, h4, h5, h6, strong {
+h1, h2, h3, h4, h5, h6 {
     color: $title-font-color;
 }
 a {
@@ -263,7 +263,7 @@ footer h3{
     margin-bottom: 15px;   
 }
 
-.accent {
+.accent, strong {
     color: #FF1C48;
 }
 .halign{
